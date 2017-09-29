@@ -15,6 +15,7 @@ ClassLoader::addDirectories(array(
 
 	app_path().'/commands',
 	app_path().'/controllers',
+    app_path().'/controllers/api',
 	app_path().'/models',
 	app_path().'/database/seeds',
 
@@ -48,7 +49,20 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 
 App::error(function(Exception $exception, $code)
 {
-	Log::error($exception);
+    Log::error($exception);
+    $data = Array();
+    $data['message'] = $exception->getMessage();
+
+    // switch statements provided in case you need to add
+    // additional logic for specific error code.
+    switch ($code) {
+        case 404:
+            return View::make('errors.404', $data);
+        case 500:
+            return View::make('errors.500', $data);
+        default :
+            return View::make('errors.404', $data);
+    }
 });
 
 /*

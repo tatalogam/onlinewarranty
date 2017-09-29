@@ -14,5 +14,8 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="authapp" />
+    <orderEntry type="module" module-name="backend" />
+    <orderEntry type="module" module-name="newapp" />
   </component>
 </module>

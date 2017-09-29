@@ -15,7 +15,7 @@ return array(
 	|
 	*/
 
-	'driver' => 'smtp',
+	'driver' => 'sendgrid',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => null, 'name' => null),
+	'from' => ['address' => 'no-reply@tatalogam.com', 'name' => 'TlWarranty'],
 
 	/*
 	|--------------------------------------------------------------------------

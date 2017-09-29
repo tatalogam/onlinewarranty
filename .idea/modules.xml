@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../authapp/.idea/authapp.iml" filepath="$PROJECT_DIR$/../authapp/.idea/authapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../backend/.idea/backend.iml" filepath="$PROJECT_DIR$/../backend/.idea/backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../newapp/.idea/newapp.iml" filepath="$PROJECT_DIR$/../newapp/.idea/newapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/onlinewarranty.iml" filepath="$PROJECT_DIR$/.idea/onlinewarranty.iml" />
     </modules>
   </component>
